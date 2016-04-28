@@ -12,6 +12,10 @@
 		3E0811D91CD20F8C001581D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0811D71CD20F8C001581D3 /* Main.storyboard */; };
 		3E0811DB1CD20F8C001581D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E0811DA1CD20F8C001581D3 /* Assets.xcassets */; };
 		3E0811DE1CD20F8C001581D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E0811DC1CD20F8C001581D3 /* LaunchScreen.storyboard */; };
+		3E0811EA1CD20FC8001581D3 /* FilteredVideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0811E61CD20FC8001581D3 /* FilteredVideoWriter.swift */; };
+		3E0811EB1CD20FC8001581D3 /* FilteredVideoVendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0811E71CD20FC8001581D3 /* FilteredVideoVendor.swift */; };
+		3E0811EC1CD20FC8001581D3 /* VideoEffectsControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0811E81CD20FC8001581D3 /* VideoEffectsControlPanel.swift */; };
+		3E0811ED1CD20FC8001581D3 /* VideoEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0811E91CD20FC8001581D3 /* VideoEffectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		3E0811DA1CD20F8C001581D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E0811DD1CD20F8C001581D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E0811DF1CD20F8C001581D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E0811E61CD20FC8001581D3 /* FilteredVideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredVideoWriter.swift; sourceTree = "<group>"; };
+		3E0811E71CD20FC8001581D3 /* FilteredVideoVendor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilteredVideoVendor.swift; sourceTree = "<group>"; };
+		3E0811E81CD20FC8001581D3 /* VideoEffectsControlPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEffectsControlPanel.swift; sourceTree = "<group>"; };
+		3E0811E91CD20FC8001581D3 /* VideoEffectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoEffectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		3E0811D21CD20F8C001581D3 /* VideoEffects */ = {
 			isa = PBXGroup;
 			children = (
+				3E0811E51CD20F9C001581D3 /* videoEffects */,
 				3E0811D31CD20F8C001581D3 /* AppDelegate.swift */,
 				3E0811D51CD20F8C001581D3 /* ViewController.swift */,
 				3E0811D71CD20F8C001581D3 /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				3E0811DF1CD20F8C001581D3 /* Info.plist */,
 			);
 			path = VideoEffects;
+			sourceTree = "<group>";
+		};
+		3E0811E51CD20F9C001581D3 /* videoEffects */ = {
+			isa = PBXGroup;
+			children = (
+				3E0811E61CD20FC8001581D3 /* FilteredVideoWriter.swift */,
+				3E0811E71CD20FC8001581D3 /* FilteredVideoVendor.swift */,
+				3E0811E81CD20FC8001581D3 /* VideoEffectsControlPanel.swift */,
+				3E0811E91CD20FC8001581D3 /* VideoEffectsView.swift */,
+			);
+			name = videoEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E0811EB1CD20FC8001581D3 /* FilteredVideoVendor.swift in Sources */,
 				3E0811D61CD20F8C001581D3 /* ViewController.swift in Sources */,
 				3E0811D41CD20F8C001581D3 /* AppDelegate.swift in Sources */,
+				3E0811ED1CD20FC8001581D3 /* VideoEffectsView.swift in Sources */,
+				3E0811EC1CD20FC8001581D3 /* VideoEffectsControlPanel.swift in Sources */,
+				3E0811EA1CD20FC8001581D3 /* FilteredVideoWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

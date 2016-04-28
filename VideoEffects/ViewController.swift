@@ -9,17 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let videoEffectsView = VideoEffectsView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(videoEffectsView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidLayoutSubviews() {
+        videoEffectsView.frame = CGRect(
+            x: 0,
+            y: topLayoutGuide.length,
+            width: view.frame.width,
+            height: view.frame.height - topLayoutGuide.length)
     }
-
-
+    
 }
 
