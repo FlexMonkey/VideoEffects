@@ -88,7 +88,7 @@ class FilteredVideoWriter: NSObject {
             String(kCVPixelBufferPixelFormatTypeKey) : Int(kCVPixelFormatType_32BGRA),
             String(kCVPixelBufferWidthKey) : currentItem.presentationSize.width,
             String(kCVPixelBufferHeightKey) : currentItem.presentationSize.height,
-            String(kCVPixelFormatOpenGLESCompatibility) : true
+//            String(kCVPixelFormatOpenGLESCompatibility) : true
         ]
         
         assetWriterPixelBufferInput = AVAssetWriterInputPixelBufferAdaptor(
